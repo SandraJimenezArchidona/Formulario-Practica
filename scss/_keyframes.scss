@@ -1,0 +1,82 @@
+
+@keyframes header{
+    from{
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+@keyframes logo{
+from{
+    transform: rotate(-90deg);
+}
+
+to{
+    transform: rotate(0deg);
+}
+}
+
+
+@keyframes textos{
+    from{
+        opacity: 0;
+        transform: translateY(-50%);
+        transform-origin: top;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes formulario{
+    from{
+        transform: scale(0) translateY(-200%);
+        transform-origin: bottom;
+    }
+
+    to{
+        transform: scale(1) translateY(0%);
+    }
+}
+
+@keyframes types{
+    from{
+        transform: scale(0) translateY(200%);
+        transform-origin: bottom;
+    }
+
+    to{
+        transform: scale(1) translateY(0%);
+    }
+}
+
+@keyframes submit{
+    from{
+        transform: scale(0);
+        transform-origin: bottom;
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes bee{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

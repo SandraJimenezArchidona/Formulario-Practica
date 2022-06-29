@@ -1,0 +1,258 @@
+@import "_mixins", "_reset", "_keyframes";
+
+.header{
+  padding: 1rem 0;
+  animation: header 1s ease 0s both;
+
+  @media screen and (max-width:768px){
+   font-size: .9em;
+  }
+
+  @media screen and (max-width:490px){
+   font-size: .8em;
+  }
+
+  &__wrapper{
+    width: 95%;
+    margin: auto;
+    @include flex(row , nowrap , space-between, center);
+    color: var(--color-claro);
+    border-bottom: solid 1px var(--color-claro);
+
+    @media screen and (max-width:900px){
+      flex-flow: wrap;
+    }
+  }
+
+  &__izq{
+    width: 50%;
+    @include flex(row, nowrap, flex-start, center);
+  }
+
+  &__h1{
+    width: 4rem;
+    margin: 0 0 2% 0;
+    color: var(--color-claro);
+  }
+
+  &__logo{
+    width: 4rem;
+    animation: menus .5s ease 1 both ;
+  }
+
+  &__contactos{
+    width: 45%;
+    @include flex(row, wrap, center, center);
+    font-weight: 400;
+    animation: menus .5s ease 0s both;
+
+    @media screen and (max-width:900px){
+      display: none;
+    }
+  }
+
+  &__contacto{
+    width: 100%;
+    margin: 0 1rem;
+
+    @media screen and (max-width:900px){
+      margin-left: 1.5rem;
+      width: 90%;
+    }
+  }
+
+  &__contacto:hover{
+    transform: scale(1.1);
+  } 
+
+  &__der{
+    width: 30%;
+
+    @media screen and (max-width:900px){
+      display: none;
+    }
+
+    &.activo{
+      display: block;
+      width: 80%;
+      margin: auto;
+    }
+  }    
+
+  &__opciones{
+    @include flex(row , nowrap , flex-end, center);
+    font-weight: 500;
+    animation: menus 1s ease 0s both;
+  }
+
+  &__opcion{
+    width: 50%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+  &__opcion:hover{
+    transform: scale(1.1);
+  }
+
+  &__menu{
+    width: 20%;
+    font-size: 0.9em;
+    font-weight: 400;
+    animation: textos 1s ease 0s both;
+    display: none;
+
+    @media screen and (max-width:900px){
+      @include flex(row, nowrap, flex-end, center);
+    }
+  }
+
+  &__icono{
+    width: 1.2rem;
+    fill: var(--color-claro);
+    margin-right: 0.5rem;
+  } 
+}
+ 
+.principal{
+  width: 80%;
+  margin: 3.5% auto;
+
+  @include flex(column, wrap, flex-end, flex-end);
+
+  @media screen and (max-width:1200px){
+    font-size: .7em;
+    margin: 50% auto 0;
+  }
+
+  @media screen and (max-width:900px){
+    display: block;
+    width: 70%;
+    margin: 0rem auto;
+    padding: 3rem 0;
+    font-size: .7em;
+  }
+
+  &__textos{
+    width: 50%;  
+    text-align: center;
+    animation: textos 1s ease 0.1s both;
+    transform-origin: top;
+
+    @media screen and (max-width: 1000px){
+      color: var(--color-claro);
+      width: 100%;
+    }
+  }
+  
+  &__h2{
+    font-size: 2.2em;
+    font-weight: 800;
+    color:var(--color-claro);
+  }
+  
+  &__p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--color-claro);
+    margin-top: 1.5rem;
+  }
+  
+  &__span{
+    color:var(--color-bee);
+  }
+  
+  &__formulario{
+    width: 50%;
+    margin: 1rem 0 0 0;
+    padding: 0 5%;
+
+    @media screen and (max-width:1000px){
+      width: 100%;
+    }
+  }
+
+  &__form{
+    width: 100%;
+  }
+
+  &__textarea{
+    background: var(--color-claro);
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    min-height: 15rem;
+    border-radius: 1.2rem;
+    animation: formulario 1s ease 0s both;
+
+    @media screen and (max-width:1000px){
+      width: 80%;
+    }
+  }
+
+  &__types{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content: center;
+    color:var(--color-oscuro);
+    animation: types 1s ease 0s both;
+  }
+  
+  &__input{
+    background: var(--color-claro);
+    width: calc(50% - 2rem);
+    margin: .75rem .75rem;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    font-size: 1em;
+    font-weight: 400;
+
+    @media screen and (max-width:1200px){
+      width: 80%;
+    }
+  }
+
+  &__submit{
+    background: var(--color-bee);
+    margin: 1rem auto;
+    padding: .5rem 3rem;
+    border-radius: 1.2rem;
+    color: var(--color-oscuro);
+    font-size: 0.93em;
+    font-weight: 400;
+    animation: submit .5s ease .5s both; 
+
+    @media screen and (max-width: 1000px){
+      width: 25%;
+      padding: .75rem 0;
+    }
+  }
+
+  &__bumblebee{
+    width: 100%;
+    margin: auto;
+    margin: 2% 0 0 0;
+    animation: bee .5s ease .5s both; 
+  }
+
+  &__marca{
+    width: 15%;
+    min-width: 2rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; 
+    fill: var(--color-claro);
+
+    @media screen and (max-width:1000px){
+      margin: 0 auto 20%;
+    }
+  }
+
+}
+  
+
