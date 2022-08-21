@@ -4,6 +4,7 @@
     <img src="https://user-images.githubusercontent.com/106440634/176454676-28e71d50-9832-4602-a8ba-e59b77e1bd98.jpg">
 </a>
 
+<br></br>
 
 ![Herramientas](https://user-images.githubusercontent.com/106440634/176454769-f633e6cf-b895-4a56-a98a-b6160052d27d.png) He utilizado:
 
